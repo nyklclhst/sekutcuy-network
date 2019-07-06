@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="bootstrap/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <title>Seculab Data Center</title>
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <style>
+        .container{
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .jumbotron{
+            margin-top: 48px;
+            border-radius: 6px;
+        }
+        .nav-link{
+            margin-left: 10px;
+            margin-right: 10px;
+            color: ghostwhite;
+        }
+        .nav-link:hover{
+            background-color: #337ab7;
+        }
+    </style>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" style="position: relative; z-index: 2;">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/seculab.png" width="40" height="40" alt="Seculab Data Center">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: ghostwhite;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data-barang.html" style="color: ghostwhite;">Data Barang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data-peminjaman.html" style="color: ghostwhite;">Data Peminjaman</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form-peminjaman.html" style="color: ghostwhite;">Form Peminjaman</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form-pengembalian.html" style="color: ghostwhite;">Form Pengembalian</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Welcome to Seculab Data Center</h2>
+                <a id="link" href="http://localhost:3000/auth/github" hidden>Sign in with github</a>
+                <script>checkAccessToken()</script>
+            </div>
+        </div>
+    </body>
+</html>
